@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>MOVIE SEARCH</title>
+   <style>
+        /* General Body Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        /* Header Section */
+        .first {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+        }
+        
+        .first h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        /* Search Container */
+        .container {
+            padding: 20px;
+        }
+
+        /* Search Input Field */
+        input[type="search"] {
+            padding: 10px;
+            width: 300px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* Buttons */
+        button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        /* Movie Data Sections */
+        .second, .Third, .Fourth, .Fifth {
+            margin-top: 30px;
+        }
+
+        /* Section Titles */
+        h2 {
+            font-size: 24px;
+            color: #333;
+        }
+
+        /* Data Divs */
+        .div2, .div3, .div4, .div5 {
+            font-size: 20px;
+            color: #555;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: white;
+            display: inline-block;
+            width: 80%;
+            margin: 10px auto;
+        }
+    </style>
+</head>
+<body>
+
+<!-- MOVIE SEARCH HEADER -->
+<div class="first">
+  <h1>MOVIE SEARCH</h1>
+</div>
+
+<!-- SEARCH CONTAINER -->
+<div class="container">
+  <form class="third">
+    <!-- SEARCH INPUT -->
+    <p>
+      <input type="search" placeholder="Search.." id="mySearch" name="search">
+    </p>
+    <!-- BUTTONS: SEARCH AND SEND -->
+    <p>
+      <button type="button" onclick="searchFunction()">Search</button>
+      <button type="button" onclick="sendFunction()">Send</button>
+    </p>
+  </form>
+</div>
+
+<!-- MOVIE TITLE SECTION -->
+<div class="second">
+    <h2>TITLE</h2>
+    <div id="title" class="div2"></div>
+</div>
+
+<!-- MOVIE RELEASED SECTION -->
+<div class="Third">
+    <h2>RELEASED</h2>
+    <div id="released" class="div3"></div>
+</div>
+
+<!-- MOVIE DIRECTOR SECTION -->
+<div class="Fourth">
+    <h2>DIRECTOR</h2>
+    <div id="director" class="div4"></div>
+</div>
+<div class="Fifth">
+  <h2>ACTORS</h2>
+  <div id="Actors" class="div5"></div>
+</div>
+
+<script src="widget.js"></script>
+
+</body>
+</html>
